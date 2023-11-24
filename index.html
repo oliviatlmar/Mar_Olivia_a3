@@ -3,6 +3,9 @@
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
+* {
+  box-sizing: border-box;
+}
   a{
     font-display: block;
     font-weight: bold;
@@ -19,9 +22,14 @@
     font-size: 20;
     color: black;
     font-family: fantasy;
-    height: 200px;
+    text-align: center;
+    margin: auto;
+    width: 600px;
   }
-
+	
+  img {
+    float: left;
+  }
   #section0 {
     font-size: 35;
     color: FFBC64;
@@ -36,25 +44,45 @@
     font-size: 20;
     background-color: white;
     font-weight: normal;
+    font-family: "Sofia", sans-serif;
   }
   #section2 {
     height: 800px; 
     color: FFBC64;
     font-size: 20;
     background-color: white;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
   }
     #section3 {
     height: 800px; 
-    color: #38945A;
+    color: FFBC64;
     font-size: 20;
+    text-align: center;
     background-color: white;
+    font-family: "Sofia", sans-serif;
   }
     #section4 {
     height: 800px; 
-    color: #38945A;
+    color: FFBC64;
     font-size: 20;
+    text-align: center;
     background-color: white;
+    font-family: "Sofia", sans-serif;
   }
+  .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  height: 300px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 </style>
 </head>
 
@@ -69,11 +97,10 @@ Olivia's Kaua'i Food Guide</h2>
   
 <div id="section0">
   <h1>Aloha!</h1>
-  <img src="personalpic.png" width=300px; height=300px;>
-</div>
+</div> 
   
 <div id="section1">
-  <p> 
+  <p> <img src="Olivia.png" width="300px"; height=300px;>
   	My name is Olivia and I love to travel to Hawai’i. 
     Over the past couple years, my family and I have visited 
     3 islands in Hawaii; O’ahu, Kaua’i and Maui. One of the 
@@ -88,11 +115,20 @@ Olivia's Kaua'i Food Guide</h2>
   
 <div id="section2">
 <h1>Restaraunts</h1>
-<img src="hibiscus.png" style="width:10%">
   <p>
   	L&L
   </p>
-  <img src="L&L.jpeg" style="width:50%">
+  <div class="row">
+  <div class="column">
+    <img src="pork.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="locomoco.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="rib.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
 </div>
   
 <div id="section3">
