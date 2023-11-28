@@ -30,7 +30,6 @@
     color: black;
     font-family: fantasy;
     text-align: center;
-    width: 900px;
   }
   
   h3 {
@@ -42,20 +41,27 @@
   
   .image2 {
     float: left;
-    width: auto;
+    width: 400px;
+    
   }
   .image3 {
     width: auto;
+    float: left;
   }
 
   .image4 {
-    float: right;
+    width: auto;
+    float: left;
   }
   
   .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
+  }
+  .left {
+    display: block;
     width: 50%;
   }
   
@@ -75,7 +81,6 @@
     color: FFBC64;
     text-align: center;
     font-family: fantasy;
-    width: 900px;
   }
   #section2 {
     padding: 50px;
@@ -85,14 +90,12 @@
     font-family: "Sofia", sans-serif;
   }
     #section3 {
-		padding: 50px;
     color: FFBC64;
     font-size: 20;
     background-color: white;
     font-family: "Sofia", sans-serif;
   }
     #section4 {
-    padding: 50px;
     color: FFBC64;
     font-size: 20;
     background-color: white;
@@ -104,19 +107,14 @@
   padding: 5px;
   height: 300px;
 }
+  ''
 div.relative {
   position: relative;
-  left: 10px;
+  left: 60px;
   width: 150px;
   text-align: center;
   color: black;
   font-family: fantasy;
-}
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 </style>
 </head>
@@ -133,7 +131,7 @@ div.relative {
 </div> 
   
 <div id="section1">
-  <p> <img src="Olivia.png" class = "image2" width="50%"; height=430px>
+  <p> <img src="Olivia.png" class ="image2" width="50%"; height=auto>
   	My name is Olivia and I love to travel to Hawai’i. 
     Over the past couple years, my family and I have visited 
     3 islands in Hawaii; O’ahu, Kaua’i and Maui. One of the 
@@ -153,27 +151,47 @@ div.relative {
   <div class="column">
     <img src="pork.png" alt="Snow" style="width:100%">
     <div class="relative">
-    This div element has position: relative;
+    Pork Katsu
     </div>
   </div>
   
   <div class="column">
     <img src="locomoco.png" alt="Forest" style="width:100%">
     <div class="relative">
-    This div element has position: relative;
+    Loco Moco;
     </div>
   </div>
   <div class="column">
     <img src="rib.png" alt="Mountains" style="width:100%">
     <div class="relative">
-    This div element has position: relative;
+    BBQ Ribs;
     </div>
   </div>
 </div>
   
+<div id="section3">
+<h1>Food Trucks</h1>
+  <div class="image3" >
+    <p><img src="poke.png" class="image3" style="height:70%"> My name is Olivia and I love to travel to Hawai’i. 
+      Over the past couple years, my family and I have visited 
+      3 islands in Hawaii; O’ahu, Kaua’i and Maui. One of the 
+      things I like most about this island is the cuisine. In 
+      my opinion, not only is the food delicious, but it allows 
+      visitors to get a taste for the beautiful culture.</p>
+  </div>  
+</div>
 
-    
-   
+<div id="section4">
+<h1>Shave Ice</h1> 
+  <div class="image4" >
+    <p><img src="jojos.jpeg" class="image4" style="height:70%"> My name is Olivia and I love to travel to Hawai’i. 
+      Over the past couple years, my family and I have visited 
+      3 islands in Hawaii; O’ahu, Kaua’i and Maui. One of the 
+      things I like most about this island is the cuisine. In 
+      my opinion, not only is the food delicious, but it allows 
+      visitors to get a taste for the beautiful culture.</p>
+  </div>  
+</div>    
  
   
 </div>
