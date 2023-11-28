@@ -6,7 +6,7 @@
 * {
   box-sizing: border-box;
 }
-  h1 {
+  h1{
     text-align: center;
     font-family: "Sofia", sans-serif;
     font-size: 60;
@@ -24,40 +24,13 @@
     height: auto; 
     color: FF9529; 
     background-color: FFF9B6;
-
   }
 	p {
-    font-size: 30;
+    font-size: 25;
     color: black;
     font-family: fantasy;
     text-align: center;
-    margin: auto;
     width: 900px;
-
-  }
-  p1 {
-    font-size: 20;
-    color: black;
-    font-family: fantasy;
-    text-align: center;
-    width: 600px;
-  }
-  
-  p2 {
-    font-size: 14;
-    color: black;
-    font-family: fantasy;
-    text-align: right;
-    width:600px;
-		min-height: 60px;
-  }
-	
-  p3 {
-    font-size: 20;
-    color: black;
-    font-family: fantasy;
-    text-align: left;
-    width: 600px;
   }
   
   h3 {
@@ -69,14 +42,13 @@
   
   .image2 {
     float: left;
+    width: auto;
   }
   .image3 {
-    float: left;
-    height: auto;
+    width: auto;
   }
 
   .image4 {
-    height: auto;
     float: right;
   }
   
@@ -86,41 +58,43 @@
     margin-right: auto;
     width: 50%;
   }
+  
+  #section1, #section2, #section3, #section4 {
+  height: 600px;  
+  }
 
   #section0 {
     font-size: 35;
     color: FFBC64;
-    height: auto; 
     text-align: center;
     font-family: "Sofia", sans-serif;
   }
     
   #section1 {
-    height: 600px; 
-    color: #38945A;
-    font-size: 20;
-    background-color: white;
-    font-weight: normal;
-    font-family: "Sofia", sans-serif;
+    font-size: 35;
+    color: FFBC64;
+    text-align: center;
+    font-family: fantasy;
+    width: 900px;
   }
   #section2 {
-    height: 600px;
+    padding: 50px;
     color: FFBC64;
     font-size: 20;
     background-color: white;
     font-family: "Sofia", sans-serif;
   }
     #section3 {
-		height: 600px;
+		padding: 50px;
     color: FFBC64;
     font-size: 20;
     background-color: white;
     font-family: "Sofia", sans-serif;
   }
     #section4 {
+    padding: 50px;
     color: FFBC64;
     font-size: 20;
-    text-align: right;
     background-color: white;
     font-family: "Sofia", sans-serif;
   }
@@ -130,7 +104,14 @@
   padding: 5px;
   height: 300px;
 }
-
+div.relative {
+  position: relative;
+  left: 10px;
+  width: 150px;
+  text-align: center;
+  color: black;
+  font-family: fantasy;
+}
 /* Clearfix (clear floats) */
 .row::after {
   content: "";
@@ -145,7 +126,7 @@
 <a href="#section3">FOOD TRUCKS</a>
 <a href="#section4">SHAVE ICE</a>
 
-<h2><img src="hibiscus.png" class="image1" style="width:170px;height:170px;">Olivia's Kaua'i Food Guide</h2>
+<h2><img src="hibiscus.png" class="image1" style=width:170px; height:170px;>Olivia's Kaua'i Food Guide</h2>
 
 <div id="section0">
   <h1>Aloha!</h1>
@@ -167,64 +148,35 @@
   
 <div id="section2">
 <h1>Restaraunts</h1>
-
-  <img src="l&lkauai.webp" class="center" style="width:40%;">
-  <div class="row">
+<img src="l&lkauai.webp" class ="center" width="50%"; height=auto>
+<div class="row">
   <div class="column">
-    <img src="pork.png" alt="Snow" style="width:100%;">
-    <p2>Pork Katsu</p2>
-    <br>
-    <p2>Delcious crispy fried pork on bed of rice. Served with coleslaw and mac salad</p2>
+    <img src="pork.png" alt="Snow" style="width:100%">
+    <div class="relative">
+    This div element has position: relative;
+    </div>
   </div>
-  <div class="column">
-    <img src="locomoco.png" alt="Forest" style="width:100%;">
-    <p1>Loco Moco</p1>
-    <br>
-    <p2>Delcious crispy fried pork on bed of rice. Served with coleslaw and mac salad</p2>
-  </div>
-  <div class="column">
-    <img src="rib.png" alt="Mountains" style="width:100%;">
-    <p1>BBQ Short Ribs</p1>
-    <br>
-    <p2>Delcious crispy fried pork on bed of rice. Served with coleslaw and mac salad</p2>
-  </div> 
-</div>  
   
-<div id="section3">
-	<h1>Food Trucks</h1>
-  <p3><img src="poke.png" class="image3" style="width:50%;"> The Kauai Poke company
-    is located at 2250 Ainako St, Koloa, HI 96756, United States. They deserve delicious 
-    fresh poke as well as other famous Hawaiin dishes. The restaraunt is family owned 
-    and uses a special family recipe. 
-  </p3>
-  <br>
-  <br>
-  <p3>This is my personal favourite poke spot on the island. It is the most fresh and well seasoned with the
-    rice cooked to perfection.
-  </p3>
-  <br>
-  <br>
-  <p1>If you are in need of a quick easy meal, check out Kauai Poke Co. Food Truck!
-  </p1>
-</div> 
+  <div class="column">
+    <img src="locomoco.png" alt="Forest" style="width:100%">
+    <div class="relative">
+    This div element has position: relative;
+    </div>
+  </div>
+  <div class="column">
+    <img src="rib.png" alt="Mountains" style="width:100%">
+    <div class="relative">
+    This div element has position: relative;
+    </div>
+  </div>
+</div>
+  
 
-<div id="section4">
-	<h1>Shave Ice</h1>
-  <p3><img src="jojos.jpeg" class="image4" alt="Forest" style="width:50%;"> The Kauai Poke company
-    is located at 2250 Ainako St, Koloa, HI 96756, United States. They deserve delicious 
-    fresh poke as well as other famous Hawaiin dishes. The restaraunt is family owned 
-    and uses a special family recipe. 
-  </p3>
-  <br>
-  <br>
-  <p3>This is my personal favourite poke spot on the island. It is the most fresh and well seasoned with the
-    rice cooked to perfection.
-  </p3>
-  <br>
-  <br>
-  <p3>If you are in need of a quick easy meal, check out Kauai Poke Co. Food Truck!
-  </p3>
-</div> 
-</div> 
+    
+   
+ 
+  
+</div>
+
 </body>
 </html>
