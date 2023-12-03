@@ -6,6 +6,9 @@
 * {
   box-sizing: border-box;
 }
+  table, th, td {
+    border:1px solid black;
+  }
   body {
     background-color: FFFAA4;
   }
@@ -16,13 +19,13 @@
     position: relative;
   }
   a{
-    padding: 20px;
     font-display: block;
     font-weight: bold;
     color: FFBC64;
 		font-family: fantasy;
     text-align: center;
     font-size: 35;
+    margin-right: 40px;
   }
   h2 {
     text-align: center;
@@ -45,8 +48,13 @@
     color: black;
     font-family: fantasy;
     text-align: left;
-    margin-right: 100px;
-    margin-top:70px;
+    margin-right: 70px;
+  }
+   h3 {
+    font-size: 25;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
   }
   h6 {
     font-size: 25;
@@ -57,19 +65,43 @@
     margin-right: 40px;
     margin-top:70px;
   }
+  
+  h7 {
+    color: black;
+    font-family: fantasy;
+    text-align: right;
+    margin-right: 40px;
+  }
+  
+  form {
+    text-align: center;
+    font-size: 40;
+  }
+  table {
+    float: right;
+    font-size: 40px;
+  }
+  address {
+    text-align: left;
+  }
+  th {
+    height: 90px;
+    width: 110px;
+  }
 
   h5 {
     font-size: 40;
     color: black;
     font-family: "Sofia", sans-serif;
     text-align: left;
-    margin-left: 70px;
+    margin-left: 100px;
+    margin-right: 70px;
   }
-  h3 {
-    margin-top: 200px;
-    font-family: "Sofia", sans-serif;
-    font-size: 35;
+  
+  textarea {
+    margin-top: 30px;
   }
+
 
   
   .image2 {
@@ -78,22 +110,19 @@
     margin-left: 70px;
   }
   .image3 {
-    width: auto;
     float: left;
-    margin-left: 60px;
-    margin-right: 10px;
+    margin-left: 40px;
   }
 
   .image4 {
     width: auto;
     float: right;
-    margin-right: 0px;
+    margin-right: 50px;
     margin-left: 20px;
   }
   
   .image5 {
     padding: 20px;
-    margin-top: 100px;
     margin-right: 10px;
   }
   
@@ -106,6 +135,13 @@
   .left {
     display: block;
     width: 50%;
+  }
+  
+  .table {
+    color: black;
+    font-family: fantasy;
+    float: right;
+		margin-right: 120px;
   }
 
 
@@ -142,7 +178,14 @@
     font-family: "Sofia", sans-serif;
   }
     #section4 {
-    height: 1500px;
+    height: 1700px;
+    color: FFBC64;
+    font-size: 20;
+    background-color: white;
+    font-family: "Sofia", sans-serif;
+  }
+  #section5 {
+    height: 1200px;
     color: FFBC64;
     font-size: 20;
     background-color: white;
@@ -174,7 +217,7 @@ div.relative {
 <a href="#section2">RESTARAUNTS</a>
 <a href="#section3">FOOD TRUCKS</a>
 <a href="#section4">SHAVE ICE</a>
-
+<a href="#section5">CONTACT</a>
 
 <div id="section0">
 	<img src="228logo.png" class="image8">
@@ -183,12 +226,16 @@ div.relative {
 <div id="section1">
   <h1>Aloha <img src="pineapple.png" class="image5" style="height:20%"></h1>
   <div class="image3" >
-    <p><img src="Olivia.png" class="image3" style="height:40%"> My name is Olivia and I love to travel to Hawai’i. 
+    <div style="width: 90%"><p><img src="Olivia.png" class="image3" style="height:40%"> My name is Olivia and I love to travel to Hawai’i. 
       Over the past couple years, my family and I have visited 
       3 islands in Hawaii; O’ahu, Kaua’i and Maui. One of the 
       things I like most about this island is the cuisine. In 
       my opinion, not only is the food delicious, but it allows 
       visitors to get a taste for the beautiful culture.</p>
+    </div>
+    <address>
+    Feel free to contact me by<a href="mailto:otlymar@uwaterloo.ca">email!</a><br> 
+    </address>
   </div>  
 </div>
   
@@ -226,12 +273,14 @@ div.relative {
     <h5>
       01. Kauai Poke Co. <p><a href="https://www.w3schools.com/">Visit Kauai Poke Co!</a></p>
     </h5>
+    <div style="width: 90%">
     <h4><img src="poke.png" class="image3" style="height:15%"> My name is Olivia and I love to travel to Hawai’i. 
       Over the past couple years, my family and I have visited 
       3 islands in Hawaii; O’ahu, Kaua’i and Maui. One of the 
       things I like most about this island is the cuisine. In 
       my opinion, not only is the food delicious, but it allows 
       visitors to get a taste for the beautiful culture.</h4>
+      </div>
   </div>  
   <div class="image4" >
     <h5>
@@ -270,7 +319,46 @@ div.relative {
       my opinion, not only is the food delicious, but it allows 
       visitors to get a taste for the beautiful culture.</h4>
   </div> 
-</div>    
+  
+  <div class="table" style="width:84%">
+    <h7>
+    <table>
+      <tr>
+      <th>Size</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Small</td>
+      <td>$4.50</td>
+    </tr>
+    <tr>
+      <td>Large</td>
+      <td>$5.50</td>
+    </tr>
+    </table>
+    </h7>
+  </div>
+</div>
+  
+<div id="section5">
+  <h1>Contact</h1> 
+<address>
+  <h3>
+    Feel free to contact me by<a href="mailto:otlymar@uwaterloo.ca">email!</a><br> 
+    or <br>
+    Use this feedback form
+  </h3>
+  </address> 
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <textarea name="message" style="width:400px; height:400px;">message</textarea>
+  <br>
+  <input type="submit">
+</form>
+</div>
 
 </body>
 </html>
