@@ -3,18 +3,56 @@
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
+  /* Uncle's Shave Ice size and price display */
   table, th, td {
     border:1px solid black;
   }
   body {
     background-color: FFFAA4;
   }
+  /* Section headings */
   h1{
-    text-align: center;
+    text-align: left;
     font-family: "Sofia", sans-serif;
     font-size: 100;
     position: relative;
+    margin-top: 50px;
+    margin-left: 50px;
   }
+  /* Contact section body text */
+  h2 {
+    font-size: 25;
+    color: black;
+    font-family: fantasy;
+    text-align: center;
+  }
+	
+  /* Body paragraph text -  left*/
+  h3 {
+    font-size: 25;
+    color: black;
+    font-family: fantasy;
+    text-align: left;
+
+  }
+  /* Subheading text */
+  h4 {
+    font-size: 40;
+    color: black;
+    font-family: "Sofia", sans-serif;
+    text-align: left;
+
+  }
+  /* Body paragraph text - right*/
+  h5 {
+    font-size: 25;
+    color: black;
+    font-family: fantasy;
+    text-align: right;
+
+    margin-top:70px;
+  }
+  /* Navigation bar text */
   a{
     font-display: block;
     font-weight: bold;
@@ -22,57 +60,25 @@
 		font-family: fantasy;
     font-size: 35;
   }
-  h2 {
-    text-align: center;
-    font-size: 80;
-    font-family: "Sofia", sans-serif;
-    height: auto; 
-    color: white; 
-  }
-	p {
+  /* Section body text */
+  p {
     font-size: 25;
     color: black;
     font-family: fantasy;
     text-align: right;
     margin-top:70px;
   }
-  h4 {
-    font-size: 25;
-    color: black;
-    font-family: fantasy;
-    text-align: left;
-
-  }
-   h3 {
-    font-size: 25;
-    color: black;
-    font-family: fantasy;
-    text-align: center;
-  }
-  h6 {
-    font-size: 25;
-    color: black;
-    font-family: fantasy;
-    text-align: right;
-
-    margin-top:70px;
-  }
-  
-  h7 {
-    color: black;
-    font-family: fantasy;
-    text-align: right;
-
-  }
-  
+  /* contact form style*/
   form {
     text-align: center;
     font-size: 40;
   }
+  /* table style */
   table {
     float: right;
     font-size: 40px;
   }
+  /* email contact style*/
   address {
     text-align: left;
   }
@@ -80,54 +86,22 @@
     height: 90px;
     width: 110px;
   }
-
-  h5 {
-    font-size: 40;
-    color: black;
-    font-family: "Sofia", sans-serif;
-    text-align: left;
-
-  }
-  
   textarea {
     margin-top: 30px;
   }
 
+	/* image style */
+  /* Section paragraph text */
 
-  
-  .image2 {
-    float: left;
-    width: 400px;
-
-  }
   .image3 {
     float: left;
 
   }
-
   .image4 {
-    width: auto;
     float: right;
+  }
 
-
-  }
-  
-  .image5 {
-    padding: 20px;
-    margin-right: 10px;
-  }
-  
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .left {
-    display: block;
-    width: 50%;
-  }
-  
+  /* table style */
   .table {
     color: black;
     font-family: fantasy;
@@ -135,7 +109,7 @@
 		margin-right: 120px;
   }
 
-
+	/* CSS sections */
   #section0 {
     height: 200px;
     font-size: 35;
@@ -181,40 +155,22 @@
     background-color: white;
     font-family: "Sofia", sans-serif;
   }
-  .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  height: 300px;
-  color: black;
-  font-family: fantasy;
-  text-align: center;
-}
-
-
-div.relative {
-  position: relative;
-  left: 60px;
-  width: 150px;
-  text-align: center;
-  color: black;
-  font-family: fantasy;
-}
 </style>
 </head>
-
+<!--Navigation headings-->
 <a href="#section1">ABOUT</a>
 <a href="#section2">RESTARAUNTS</a>
 <a href="#section3">FOOD TRUCKS</a>
 <a href="#section4">SHAVE ICE</a>
 <a href="#section5">CONTACT</a>
 
+<!--Section 0: Logo-->
 <div id="section0">
-	<img src="228logo.png" class="image8">
+	<img src="228logo.png">
 </div> 
-  
+<!--Section 1: About-->
 <div id="section1">
-  <h1>Aloha <img src="pineapple.png" class="image5" style="height:20%"></h1>
+  <h1>Aloha <img src="pineapple.png" style="height:20%"></h1>
   <div class="image3" >
     <div> <p><img src="Olivia.png" class="image3" style="height:40%"> My name is Olivia and I 
       love to travel to Hawai’i. Over the past couple years, my family and I have visited 3 islands in Hawaii; 
@@ -228,26 +184,24 @@ div.relative {
     </address>
   </div>  
 </div>
-  
+<!--Section 2: Restaraunts--> 
 <div id="section2">
   <h1>Restaraunts</h1>
   <div class="image3">
-    <h5>
+    <h4>
       01. L&L BBQ <p><a href="https://www.hawaiianbarbecue.com/about/">Visit L&L BBQ!</a></p>
-    </h5>
-    <h5></h5>
-    <h4><img src="l&lkauai.webp" class="image3" style="height:15%">L&L BBQ serves some delicious traditional Hawaiin 
+    </h4>
+    <h3><img src="l&lkauai.webp" class="image3" style="height:15%">L&L BBQ serves some delicious traditional Hawaiin 
       foods. They are a franchise business and have several locations throughout Hawaii, as well as locations in 
       other areas of the United States. They are most famous for their “plate lunches” which consists of a bed of 
       rice, protein of choice and a side of the famous Hawaiin macaroni salad. My personal favorite dish here is 
       the Spam Saimin which is a noodle dish with one of Hawaii’s famous foods, Spam. The broth is beautifully 
-      flavored and is definitely a comfort food for me.  .</h4>
+      flavored and is definitely a comfort food for me.  .</h3>
   </div>  
-  
   <div class="image4">
-    <h5>
+    <h4>
       02. Dolphin <p><a href="https://hanaleidolphin.com/">Visit Dolphin!</a></p>
-    </h5>
+    </h4>
     <p><img src="dolphin.png" class="image4" style="height:15%">The Dolphin is a lovely sit-down restaurant experience 
       if you are looking for something more high end. They serve a delicious variety of seafood and cocktails. Their 
       sushi menu is my personal favorite with a huge selection of unique rolls that are packed with flavor. The 
@@ -255,39 +209,39 @@ div.relative {
       seafood and a relaxed beach vibe. </p>
   </div>
 </div>
-
+<!--Section 3: Food trucks-->
  <div id="section3">
   <h1>Food Trucks</h1>
   <div class="image3" >
-    <h5>
+    <h4>
       01. Kauai Poke Co. <p><a href="https://www.kauaipokeco.com/">Visit Kauai Poke Co!</a></p>
-    </h5>
+    </h4>
     <div style="width: 90%">
-    <h4><img src="poke.png" class="image3" style="height:15%"> The Kauai Poke Co. Is a family-owned business that 
+    <h3><img src="poke.png" class="image3" style="height:15%"> The Kauai Poke Co. Is a family-owned business that 
       serves delicious, fresh poke bowls. Poke is a staple food in Hawaii and if you like raw fish, this destination 
       is a must. Kauai Poke Co. Does it best. Fish packed with flavor over a bed of rice served with a side of 
       coleslaw is simply heaven on a plate. They also serve various salads and sushi rolls that have delicious 
       fresh flavors. If you are looking for a sit-down option, they also have a restaurant location. Follow the 
-      link to view the menu and location because you will not want to miss this destination!</h4>
+      link to view the menu and location because you will not want to miss this destination!</h3>
       </div>
   </div>  
   <div class="image4" >
-    <h5>
+    <h4>
       02. Wake Up Delicious <p><a href="https://truckingdeliciouskauai.com/">Visit Wake Up Delicious!</a></p>
-    </h5>
-    <h6><img src="wakeup.jpeg" class="image4" style="height:15%">Wake Up Delicious is a café style destination with 
+    </h4>
+    <h5><img src="wakeup.jpeg" class="image4" style="height:15%">Wake Up Delicious is a café style destination with 
       delicious brunch options and more traditional Hawaiin dishes. Food trucks are the perfect destination for a 
       beach day or any time you need a quick and easy meal. Their famous garlic shrimp is my personal favorite but 
-      any of their delicious options is a guaranteed delicious experience. </h6>
+      any of their delicious options is a guaranteed delicious experience. </h5>
   </div> 
 </div>
-
+<!--Section 4: Shave ice-->
 <div id="section4">
 	<h1>Shave Ice</h1> 
   <div class="image4" >
-    <h5>
+    <h4>
       01. Jojo's <p><a href="https://jojosshaveice.com/">Visit Jojo's!</a></p>
-    </h5>
+    </h4>
     <p><img src="jojos.jpeg" class="image4" style="height:15%">Jojo’s Shaved Ice is a traditional Hawaiin dessert 
       destination. What’s unique about Jojo’s is their handcrafted syrups that come in a variety of different 
       fruity flavors. Along with the fluffy and refreshing ice, you can add toppings such as a scoop of ice cream 
@@ -295,19 +249,18 @@ div.relative {
       Hawaiin sun, Jojo’s is sure to cool you down with a delicious treat.  </p>
   </div>  
   <div class="image3" >
-    <h5>
+    <h4>
       02. Uncle's <p><a href="https://www.uncleskauai.com/">Visit Uncle's!</a></p>
-    </h5>
-    <h4><img src="uncles.jpeg" class="image3" style="height:15%">Uncle’s Shave Ice is another popular destination 
+    </h4>
+    <h3><img src="uncles.jpeg" class="image3" style="height:15%">Uncle’s Shave Ice is another popular destination 
       on the island. They showcase a unique selection of flavors such as, Banana, Birthday Cake, Blue Hawaiian, 
       Raspberry, Bubblegum, Cherry, Coconut and Cotton Candy. My personal favorite is the Blue Hawaiin as it’s 
       refreshing and has a burst of fruity flavor. Uncle’s offers small and large sized ice which is perfect for 
       sharing. See options below. Check out this amazing dessert destination to experience a traditional Hawaiin 
-      treat! </h4>
+      treat! </h3>
   </div> 
   
   <div class="table" style="width:84%">
-    <h7>
     <table>
       <tr>
       <th>Size</th>
@@ -322,24 +275,23 @@ div.relative {
       <td>$5.50</td>
     </tr>
     </table>
-    </h7>
   </div>
 </div>
-  
+<!--Section 5: contacts--> 
 <div id="section5">
   <h1>Contact</h1> 
 <address>
-  <h3>
+  <h2>
     Feel free to contact me by <a href="mailto:otlymar@uwaterloo.ca">email!</a><br> 
     or <br>
     Use this feedback form
-  </h3>
+  </h2>
   </address> 
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+  <input type="text" id="fname" name="fname" value=""><br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <input type="text" id="lname" name="lname" value=""><br>
   <textarea name="message" style="width:400px; height:400px;">message</textarea>
   <br>
   <input type="submit">
