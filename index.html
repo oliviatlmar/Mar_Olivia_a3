@@ -3,6 +3,26 @@
 <head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
+  /* Link states */
+  a:link {
+  color: FFBC64;
+  text-decoration: underline;
+  }
+
+  a:visited {
+    color: orange;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: green;
+    text-decoration: underline;
+  }
+
+  a:active {
+    color: yellow;
+    text-decoration: underline;
+  }
   /* Uncle's Shave Ice size and price display */
   table, th, td {
     border:1px solid black;
@@ -21,7 +41,7 @@
   }
   /* Contact section body text */
   h2 {
-    font-size: 25;
+    font-size: 40;
     color: black;
     font-family: fantasy;
     text-align: center;
@@ -40,7 +60,7 @@
   h4 {
     font-size: 40;
     color: black;
-    font-family: "Sofia", sans-serif;
+    font-family: fantasy;
     text-align: left;
 		margin-left: 80px;
   }
@@ -91,6 +111,13 @@
   textarea {
     margin-top: 30px;
   }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+  }
 
 	/* image style */
   /* Section paragraph text */
@@ -103,6 +130,9 @@
   .image4 {
     float: right;
     margin-right: 20px;
+  }
+  .image5 {
+    text-align: center;
   }
 
   /* table style */
@@ -153,7 +183,7 @@
     font-family: "Sofia", sans-serif;
   }
   #section5 {
-    height: 1200px;
+    height: 1500px;
     color: FFBC64;
     font-size: 20;
     background-color: white;
@@ -282,6 +312,7 @@
 <!--Section 5: contacts--> 
 <div id="section5">
   <h1>Contact</h1> 
+  <img src="mail.png" class="center" style="height:17%">
 <address>
   <h2>
     Feel free to contact me by <a href="mailto:otlymar@uwaterloo.ca">email!</a><br> 
